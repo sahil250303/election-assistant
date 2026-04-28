@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive assistant to help you understand the election process, timelines, and steps.">
+    <title>Democracy Hub | Election Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <div class="glass-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🗳️</span>
+                <h1>Democracy Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#process">The Process</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#assistant" class="btn-primary">Ask Assistant</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-section text-center">
+            <h2 class="hero-title">Your Voice. Your Vote. <br><span class="text-gradient">Simplified.</span></h2>
+            <p class="hero-subtitle">Navigate the election process with confidence using our interactive assistant.</p>
+            <a href="#assistant" class="btn-primary btn-large">Get Started</a>
+        </section>
+
+        <section id="process" class="section-container glass-panel">
+            <h3 class="section-title">Step-by-Step Election Process</h3>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h4>Register to Vote</h4>
+                    <p>Check your eligibility and register before the deadline. It's the first crucial step to participating.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h4>Know Your Candidates</h4>
+                    <p>Research the candidates and their platforms. Understand what each represents for your community.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h4>Find Your Polling Place</h4>
+                    <p>Locate where you need to vote on Election Day, or check how to vote by mail if applicable.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h4>Cast Your Ballot</h4>
+                    <p>Head to the polls with your ID (if required) and make your voice heard!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section-container glass-panel">
+            <h3 class="section-title">Election Timeline</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Voter Registration Deadline</h4>
+                        <p class="date">October 15</p>
+                        <p>Last day to register to vote for the upcoming election.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Early Voting Begins</h4>
+                        <p class="date">October 24</p>
+                        <p>Cast your vote early at designated polling locations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Election Day</h4>
+                        <p class="date">November 5</p>
+                        <p>The final day to cast your ballot. Polls typically open from 7 AM to 8 PM.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="assistant" class="section-container glass-panel assistant-section">
+            <h3 class="section-title">Interactive Assistant</h3>
+            <p class="text-center mb-4">Have questions? Ask our assistant for quick answers.</p>
+            
+            <div class="chat-container">
+                <div class="chat-window" id="chat-window">
+                    <div class="message assistant-msg">
+                        <div class="msg-avatar">🗳️</div>
+                        <div class="msg-content">Hello! I'm your Election Assistant. How can I help you today? You can ask me about registering, deadlines, or how to vote.</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <div class="quick-questions">
+                        <button class="quick-btn">How do I register?</button>
+                        <button class="quick-btn">What are the deadlines?</button>
+                        <button class="quick-btn">Where do I vote?</button>
+                    </div>
+                    <form id="chat-form" class="input-form">
+                        <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+                        <button type="submit" class="btn-primary send-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Democracy Hub. Designed to empower voters.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
